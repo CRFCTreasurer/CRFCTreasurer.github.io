@@ -1,0 +1,207 @@
+@import 'https://fonts.google.com/specimen/Alegreya+Sans';
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	background: #f5f5f5;
+	color: white;
+	font-family: 'Alegreya', sans-serif;
+	margin:0;
+}
+
+
+h2 {
+	font-size: 180%;
+	font-weight: 700;
+	text-align:center;
+	padding-top:2%;
+}
+
+p {
+	font-size: 120%;
+	line-height: 150%;
+	padding: 3%;
+	text-align: justify;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+header{
+	background-color: green;
+	width: 100%;
+	height: 86px;
+}
+
+#header-inner
+{
+	max-width: 1200 px;
+	margin: 0 auto;
+}
+
+#logo {
+	margin: 10px;
+	float: left;
+	width: 46px;
+	height: 60px;
+	background-size: cover;
+	background: url(../img/CRFC_logo_web.png) no-repeat center;
+}
+
+nav{
+	float:right;
+	padding: 25px 20px 0 0;
+}
+
+#menu-icon{
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(../img/nav.png) center;
+}
+
+a:hover #menu-icon{
+	border-radius: 4px 4px 0 0;
+}
+
+ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 100%;
+	font-weight: 700;
+	display: inline-block;
+	float: left;
+	padding:10px;
+}
+
+nav ul li a{
+	color:#f5f5f5;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color:darkgrey;
+}
+
+.current {
+	color: #cd37df;
+}
+/*end navigation*/
+
+.banner{
+/* I don't think we need to style this at all as the image has a background*/
+}
+
+.wrapper{
+	float: left;
+	width: 100%;
+	background-color: #3CB371;
+}
+
+article{
+	float: left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+}
+
+article p{
+	text-align: center;
+}
+
+aside{
+	float: right;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+}
+
+footer{
+	background-color: darkgrey;
+	width: 100%
+}
+
+.social{
+	list-style-type: none;
+	text-align: center;
+}
+
+.social li{
+	display: inline;
+}
+
+.social i{
+	font-size: 300%;
+	margin: 1%;
+	padding: 3% 5% 3% 5%;
+	color: #c3d7df;
+}
+
+.social i:hover{
+	color: #f5f5f5;
+}
+
+footer.second{
+	border-top: 1px solid black;
+	background-color: #545B59;
+}
+
+/*media!!!*/
+
+@media screen and (max-width: 800px){
+	h2{
+		font-size: 130%;
+	}
+
+	p{
+		font-size: 100%;
+	}
+
+	header{
+
+	}
+	#menu-icon{
+		display: inline-block;
+	}
+	nav ul, nav:active ul{
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		padding: 10px;
+		background: green;
+		right: 20px;
+		top: 60px;
+		border:3px solid #FFF;
+		border-radius: 2px 0 2px 2px;
+		width: 110px
+	}
+	nav:hover ul{
+		display: block;
+	}
+	nav li{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0 10px 0;
+	}
+	article{
+		width: 100%;
+	}
+	aside{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
