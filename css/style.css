@@ -153,12 +153,30 @@ nav ul li a:hover{
 /*end navigation*/
 
 .wrapper{
-	color: black;
+	color: white;
 	float: left;
+	padding:20px 0;
 	width: 100%;
-	background-color: white;
+	background-color: #3d3f42;
+
 }
 
+article ul li{
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 100%;
+	font-weight: 700;
+	text-align: center;
+	padding:5px;
+}
+article ul li a{
+	
+	color:#f5f5f5;
+	text-decoration: none;
+}
+
+article ul li a:hover{
+	color:darkgrey;
+}
 article{
 	
 	float: left;
@@ -169,6 +187,11 @@ article{
 
 article p{
 	text-align: center;
+	
+}
+
+article p a{
+		color:darkgrey;
 	
 }
 
@@ -183,6 +206,11 @@ aside{
 	height: auto;
 	margin-left: auto;
     margin-right: auto;
+}
+
+table{
+    display: table;
+    margin: 0 auto;
 }
 
 footer{
